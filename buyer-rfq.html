@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit an RFQ | NEWGIGZ</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="newgigz-logo.png" alt="NEWGIGZ"></a><a class="back-link" href="index.html">← Back to Home</a></div></header>
+<main class="form-page">
+<div class="container form-shell">
+  <div class="form-intro">
+    <p class="eyebrow gold">FOR BUYERS</p>
+    <h1>Submit an RFQ</h1>
+    <p>Tell NEWGIGZ what you need. Please provide enough detail for us to understand the requirement and identify relevant supply options.</p>
+  </div>
+  <form class="lead-form" action="https://formsubmit.co/hello@newgigz.com" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="NEWGIGZ Buyer RFQ">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <div class="form-grid">
+      <label>Company Name*<input required name="Company Name"></label>
+      <label>Contact Name*<input required name="Contact Name"></label>
+      <label>Work Email*<input required type="email" name="Work Email"></label>
+      <label>Phone<input name="Phone"></label>
+      <label>Equipment Category*
+        <select required name="Equipment Category">
+          <option value="">Select</option><option>Transformer</option><option>Switchgear</option><option>Backup Generator / Power</option><option>Other Critical Infrastructure</option>
+        </select>
+      </label>
+      <label>Quantity<input name="Quantity"></label>
+      <label>Delivery Destination*<input required name="Delivery Destination"></label>
+      <label>Required Delivery Date<input type="date" name="Required Delivery Date"></label>
+      <label>Estimated Budget / Contract Value<input name="Estimated Budget"></label>
+      <label>Condition Preference<select name="Condition Preference"><option>New</option><option>New or Refurbished</option><option>Refurbished acceptable</option><option>No preference</option></select></label>
+    </div>
+    <label>Technical Specifications / Requirement*<textarea required name="Technical Specifications" rows="7"></textarea></label>
+    <label>Certification / Compliance Requirements<textarea name="Certification Requirements" rows="3"></textarea></label>
+    <label>Upload Specification / RFQ Document<input type="file" name="attachment"></label>
+    <label class="check"><input required type="checkbox" name="Acknowledgment"> I understand NEWGIGZ is a commercial sourcing intermediary and does not provide engineering advice or guarantee technical suitability.</label>
+    <button class="btn btn-primary submit-btn" type="submit">Submit RFQ</button>
+    <p class="form-note">Your information will be sent to hello@newgigz.com for review.</p>
+  </form>
+</div>
+</main>
+<footer><div class="container footer-wrap"><strong>NEWGIGZ Inc.</strong><span>hello@newgigz.com</span></div></footer>
+</body></html>
